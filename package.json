@@ -1,0 +1,20 @@
+{
+  "name": "@kitty-punch/tri-crypto-factory-ng-contracts",
+  "version": "0.1.0",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3",
+    "web3": "^4.14.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "forge build",
+    "test": "forge test -vvv",
+    "coverage": "forge coverage --report summary --report lcov",
+    "lint:sol": "prettier --write 'src/**/*.sol' 'test/**/*.sol'",
+    "createTriKittyPool": "npx ts-node ./script/07_TriKittyFactoryDeployPool.ts"
+  }
+}
